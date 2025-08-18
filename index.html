@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library & Events API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Library & Events API, Cecily!</h1>
+    <p>Click buttons below to explore live events and popular books.</p>
+  </header>
+
+  <main>
+    <section class="api-section" id="events-section">
+      <h2>Hamro Patro Events</h2>
+      <button onclick="fetchEvents()">Load Events</button>
+      <pre id="events-output"></pre>
+    </section>
+
+    <section class="api-section" id="popular-books-section">
+      <h2>Popular Books</h2>
+      <button onclick="fetchPopularBooks()">Load Popular Books</button>
+      <pre id="books-output"></pre>
+    </section>
+
+    <section class="api-section" id="all-books-section">
+      <h2>All Library Books</h2>
+      <button onclick="fetchAllBooks()">Load All Books</button>
+      <pre id="all-books-output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Library & Events API Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
